@@ -1,0 +1,40 @@
+button {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(13, 100%, 72%);
+  border-radius: 20px;
+  padding: 8px 19px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.5s;
+  border: 1px solid white;
+  font-size: 11px;
+}
+button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+}
+button.active {
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+}
+button.active:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(13, 100%, 72%);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=wbesite.css.map */

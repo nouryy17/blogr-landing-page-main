@@ -1,0 +1,25 @@
+button {
+  color: white;
+  border-radius: 20px;
+  padding: 9px 23px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=website.css.map */

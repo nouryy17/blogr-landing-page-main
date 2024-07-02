@@ -1,0 +1,33 @@
+@mixin for-size($size) 
+@mixin respond($breakpoint) 
+    @if $size == phone-only 
+       @media (max-width: 375px) 
+        @content 
+    @else if $size == mobile-small 
+       @media (max-width: 480px) 
+        @content 
+    @else if $size == max-mobile 
+       @media (max-width: 767px) 
+        @content 
+    @else if $size == tablet-landscape-up 
+       @media (max-width: 991px) 
+        @content 
+    @else if $size == tablet-landscape-up 
+       @media (max-width: 1024px) 
+        @content 
+    @else if $size == desktop-up 
+       @media (max-width: 1200px)  
+        @content
+    @else if $size == big-desktop-up 
+       @media (min-width: 1600px) 
+        @content 
+
+
+
+
+@mixin crossBrowser($property, $val)
+  -webkit-#{$property}: $val
+  -moz-#{$property}: $val
+  -ms-#{$property}: $val
+  #{$property}: $val
+
