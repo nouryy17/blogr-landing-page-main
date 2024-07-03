@@ -11,7 +11,7 @@ button {
   font-size: 11px;
 }
 button:hover {
-  background-color: transparent;
+  background-color: hsl(355, 100%, 74%);
   color: hsl(0, 0%, 100%);
 }
 button.active {
@@ -66,16 +66,22 @@ body {
 .page-header nav div ul.nav > li {
   position: relative;
 }
+.page-header nav div ul.nav > li:hover > .dropdown-menu {
+  display: block;
+}
+.page-header nav div ul.nav > li:hover::after {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
 .page-header nav div ul.nav > li a {
   color: hsl(0, 0%, 100%);
-}
-.page-header nav div ul.nav > li a:hover > .dropdown-menu {
-  display: block;
 }
 .page-header nav div ul.nav > li::after {
   content: "";
   position: absolute;
-  top: 37%;
+  top: 28%;
   right: -12px;
   width: 9px;
   height: 10px;
@@ -101,7 +107,7 @@ body {
 }
 .page-header nav div ul.nav > li ul.dropdown-menu {
   position: absolute;
-  top: 35px;
+  top: 23px;
   display: block;
   background-color: hsl(0, 0%, 100%);
   padding: 10px auto;
@@ -109,7 +115,7 @@ body {
   width: fit-content;
   height: fit-content;
   padding: 15Px;
-  width: 161%;
+  min-width: 161px;
   display: none;
 }
 .page-header nav div ul.nav > li ul.dropdown-menu li {
@@ -133,15 +139,36 @@ body {
 .page-header nav .svg {
   display: none;
 }
+.page-header .part_tow {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 40px 0;
+}
+.page-header .part_tow h1 {
+  font-size: 45Px;
+  margin-bottom: 22px;
+}
+.page-header .part_tow p {
+  margin-bottom: 43px;
+}
+.page-header .part_tow .button:nth-child(2) {
+  margin-left: 20px;
+}
 
 .page-header {
   background-color: hsl(13, 100%, 72%);
   padding: 0 60px;
   display: flex;
+  height: 450px;
   flex-direction: column;
   background-image: url("../images/bg-pattern-intro-desktop.svg");
   background-size: 2000px;
   background-position: left;
+  border-bottom-left-radius: 85px;
 }
 @media (max-width: 375px) {
   .page-header {
@@ -160,6 +187,101 @@ body {
     background-image: url("../images/bg-pattern-intro-mobile.svg");
     background-position: center;
   }
+}
+
+.section_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px;
+  height: 700px;
+}
+.section_2 h2 {
+  color: hsl(237, 23%, 32%);
+  text-align: center;
+}
+.section_2 .part-tow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section_2 .part-tow .one {
+  flex-basis: 50%;
+}
+.section_2 .part-tow .one h4 {
+  color: hsl(237, 23%, 32%);
+  margin-bottom: 15px;
+}
+.section_2 .part-tow .one p {
+  color: hsl(240, 2%, 79%);
+  margin-bottom: 30px;
+}
+.section_2 .part-tow .tow img {
+  width: 500px;
+  height: 500px;
+}
+
+.section_3 {
+  display: flex;
+  align-items: center;
+  background-color: hsl(237, 17%, 21%);
+  height: 350Px;
+  border-radius: 0px 77px 0 77px;
+  background-image: url("../images/bg-pattern-circles.svg");
+  background-position: left;
+  background-size: cover;
+  background-size: 655px;
+  background-repeat: no-repeat;
+  background-position-y: -281px;
+  margin-bottom: 30px;
+}
+.section_3 h2 {
+  color: hsl(0, 0%, 100%);
+}
+.section_3 p {
+  color: hsl(0, 0%, 100%);
+  max-width: 400px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.section_4 {
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  height: 650px;
+}
+.section_4 img {
+  width: 600px;
+  transform: translateX(-52px);
+}
+.section_4 .one {
+  flex-basis: 50%;
+}
+.section_4 .one h4 {
+  color: hsl(237, 23%, 32%);
+  margin-bottom: 15px;
+}
+.section_4 .one p {
+  color: hsl(240, 2%, 79%);
+  margin-bottom: 30px;
+}
+
+footer {
+  display: flex;
+  padding: 60px;
+  background-color: hsl(240, 10%, 16%);
+  justify-content: space-around;
+  border-top-right-radius: 82px;
+}
+footer nav h5 {
+  color: hsl(0, 0%, 100%);
+}
+footer nav ul a {
+  color: hsl(240, 2%, 79%);
+}
+footer nav ul a:hover {
+  text-decoration-line: revert;
 }
 
 /*# sourceMappingURL=website.css.map */

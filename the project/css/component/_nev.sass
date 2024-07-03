@@ -19,16 +19,18 @@
                     gap: 30px
                     flex: 1
                     & >li 
+                        &:hover > .dropdown-menu
+                           display: block
+                        &:hover::after
+                            @include crossBrowser(transform,rotateX(180deg))
                         position: relative
                         a
                             color: $White
-                            &:hover > .dropdown-menu
-                                display: block
                                 
                         &::after
                             content:""
                             position: absolute
-                            top: 37%
+                            top: 28%
                             right: -12px
                             width: 9px
                             height: 10px
@@ -45,7 +47,7 @@
                         ul
                             &.dropdown-menu
                              position: absolute
-                             top: 35px
+                             top: 23px
                              display: block
                              background-color: hsl(0, 0%, 100%)
                              padding: 10px auto
@@ -53,7 +55,7 @@
                              width: fit-content
                              height: fit-content
                              padding: 15Px
-                             width: 161%
+                             min-width: 161px
                              display: none
 
                              li
@@ -73,3 +75,24 @@
         
         .svg
             display: none
+    .part_tow
+        text-align: center
+        color: $White
+        align-items: center
+        display: flex
+        flex-direction: column
+        flex: 1
+        padding: 40px 0
+        h1
+           font-size: 45Px
+           margin-bottom: 22px
+        p
+            margin-bottom: 43px
+        .button
+            &:nth-child(2)
+                margin-left: 20px
+
+
+
+
+

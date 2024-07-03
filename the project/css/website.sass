@@ -7,10 +7,13 @@
     background-color:$Very-light-red
     padding: 0 60px
     display: flex
+    height: 450px
     flex-direction: column
     background-image: url("../images/bg-pattern-intro-desktop.svg")
     background-size: 2000px
     background-position: left
+    border-bottom-left-radius: 85px
+
     @include for-size( phone-only)
       background-image: url("../images/bg-pattern-intro-mobile.svg")
       background-position: center
@@ -20,6 +23,83 @@
     @include for-size(max-mobile)
       background-image: url("../images/bg-pattern-intro-mobile.svg")
       background-position: center
+.section_2
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 60px
+    height: 700px
+    h2
+        color: $Very-dark-desaturated-blue
+        text-align: center
+    .part-tow
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .one
+            flex-basis: 50%
+            h4
+               color: $Very-dark-desaturated-blue
+               margin-bottom: 15px
+            p
+                color: $Grayish-blue
+                margin-bottom: 30px
+        .tow
+            img
+                width: 500px
+                height: 500px
+.section_3
+    display: flex
+    align-items: center
+    background-color: $Very-dark-gray-blue
+    height: 350Px
+    border-radius: 0px 77px 0 77px
+    background-image: url("../images/bg-pattern-circles.svg")
+    background-position: left
+    background-size: cover
+    background-size: 655px
+    background-repeat: no-repeat
+    background-position-y: -281px
+    margin-bottom: 30px
+    h2
+      color: $White
+    p
+      color: $White
+      max-width: 400px
+      font-weight: 300
+      line-height: 30px
+.section_4
+  padding: 60px
+  display: flex
+  align-items: center
+  height: 650px
+  img
+    width: 600px
+    transform: translateX(-52px)
+  .one
+            flex-basis: 50%
+            h4
+               color: $Very-dark-desaturated-blue
+               margin-bottom: 15px
+            p
+                color: $Grayish-blue
+                margin-bottom: 30px
+footer
+  display: flex
+  padding: 60px
+  background-color: $Very-dark-black-blue
+  justify-content: space-around
+  border-top-right-radius: 82px
+  nav
+    h5
+      color: $White
+    ul
+      a
+        color: $Grayish-blue
+        &:hover
+          text-decoration-line: revert
+
+
     
        
        
