@@ -4,6 +4,30 @@
 @import "pegs/_globlepegs"
 @import "component/_nev"
 .page-header
+    background-color:$Very-light-red
+    padding: 0 60px
+    display: flex
+    flex-direction: column
+    background-image: url("../images/bg-pattern-intro-desktop.svg")
+    background-size: 2000px
+    background-position: left
+    @include for-size( phone-only)
+      background-image: url("../images/bg-pattern-intro-mobile.svg")
+      background-position: center
+    @include for-size( mobile-small)
+      background-image: url("../images/bg-pattern-intro-mobile.svg")
+      background-position: center
+    @include for-size(max-mobile)
+      background-image: url("../images/bg-pattern-intro-mobile.svg")
+      background-position: center
+    
+       
+       
+    
+        
+    
+
+
     
 
 
