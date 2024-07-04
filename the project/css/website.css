@@ -55,6 +55,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 991px) {
+  .page-header nav div {
+    display: none;
+  }
+  .page-header nav div.activ {
+    display: block;
+  }
+}
 .page-header nav div ul.nav {
   display: flex;
   height: 100%;
@@ -136,8 +144,14 @@ body {
 .page-header nav div div span {
   color: hsl(0, 0%, 100%);
 }
-.page-header nav .svg {
+.page-header nav .svg svg {
+  cursor: pointer;
   display: none;
+}
+@media (max-width: 991px) {
+  .page-header nav .svg svg.activ {
+    display: block;
+  }
 }
 .page-header .part_tow {
   text-align: center;
