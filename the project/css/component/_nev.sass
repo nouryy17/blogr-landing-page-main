@@ -43,7 +43,7 @@
                             background-position: center
                             background-size: cover
                             background-image: url("../images/icon-arrow-light.svg") 
-                            @include for-size( phone-only)
+                            @include for-size( mobile-small)
                               background-image: url("../images/icon-arrow-light.svg")
                             @include for-size( mobile-small)
                               background-image: url("../images/icon-arrow-light.svg")
@@ -78,13 +78,15 @@
                     color: $White
 
         
-        .svg
-            svg
-              cursor: pointer  
-              display: none
-              @include for-size(tablet-landscape-up)
-                &.activ
-                  display: block
+            .svg
+                display: none
+                @include for-size(tablet-landscape-up )
+                 display: block
+                 svg
+                       cursor: pointer
+                       display: none
+                       &.activ
+                         display: block
                 
                     
     .part_tow
@@ -98,11 +100,19 @@
         h1
            font-size: 45Px
            margin-bottom: 22px
+           @include for-size(mobile-small)
+             font-size: 32px
+
         p
             margin-bottom: 43px
+            @include for-size(mobile-small)
+              
+
         .button
             &:nth-child(2)
                 margin-left: 20px
+        @include for-size(mobile-small)
+         
 
 
 

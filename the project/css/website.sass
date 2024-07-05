@@ -14,9 +14,12 @@
     background-position: left
     border-bottom-left-radius: 85px
 
-    @include for-size( phone-only)
+    @include for-size(  mobile-small)
       background-image: url("../images/bg-pattern-intro-mobile.svg")
       background-position: center
+      background-size: 1000px
+      padding: 0 30px
+      
     @include for-size( mobile-small)
       background-image: url("../images/bg-pattern-intro-mobile.svg")
       background-position: center
@@ -29,15 +32,33 @@
     justify-content: space-between
     padding: 60px
     height: 700px
+    @include for-size(  mobile-small)
+      height: fit-content
+
+
     h2
         color: $Very-dark-desaturated-blue
         text-align: center
+        @include for-size(  mobile-small)
+            font-size: 23px
+
     .part-tow
         display: flex
         align-items: center
         justify-content: space-between
+        @include for-size(  mobile-small)
+           flex-direction: column-reverse
+           margin-top: 50px
+           text-align: center
+           margin-bottom: 121px
+           
+
+
         .one
             flex-basis: 50%
+            @include for-size(  mobile-small)
+              margin-top: 50px
+
             h4
                color: $Very-dark-desaturated-blue
                margin-bottom: 15px
@@ -48,6 +69,10 @@
             img
                 width: 500px
                 height: 500px
+                @include for-size(  mobile-small)
+                  width: 400Px
+                  height: 400px
+            
 .section_3
     display: flex
     align-items: center
@@ -61,18 +86,50 @@
     background-repeat: no-repeat
     background-position-y: -281px
     margin-bottom: 30px
-    h2
-      color: $White
-    p
-      color: $White
-      max-width: 400px
-      font-weight: 300
-      line-height: 30px
+    position: relative
+    @include for-size(  mobile-small)
+        flex-direction: column
+        height: fit-content
+        text-align: center
+        
+        
+    .tow
+      @include for-size(  mobile-small)
+      
+        margin-top: -100Px
+        padding-bottom: 79px
+        h2
+          color: $White
+          @include for-size(  mobile-small)
+    
+              font-weight: 500
+              font-size: 36px
+    
+        p
+          color: $White
+          max-width: 400px
+          font-weight: 300
+          line-height: 30px
+          @include for-size(  mobile-small)
+             margin: auto
+
+    img
+      @include for-size(  mobile-small)
+        width: 400px
+        height: 400Px
+        transform: translateY(-150px)
+        
+    
 .section_4
   padding: 60px
   display: flex
   align-items: center
   height: 650px
+  @include for-size(  mobile-small)
+     flex-direction: column
+     height: fit-content
+     text-align: center
+
   img
     width: 600px
     transform: translateX(-52px)
@@ -90,6 +147,17 @@ footer
   background-color: $Very-dark-black-blue
   justify-content: space-around
   border-top-right-radius: 82px
+  @include for-size(  mobile-small)
+      flex-direction: column
+      text-align: center
+      svg
+        margin: auto
+        margin-bottom: 30px
+
+      nav  
+         ul
+           margin-bottom: 30px
+
   nav
     h5
       color: $White
