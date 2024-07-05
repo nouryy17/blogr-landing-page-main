@@ -19,10 +19,6 @@
       background-position: center
       background-size: 1000px
       padding: 0 30px
-      
-    @include for-size( mobile-small)
-      background-image: url("../images/bg-pattern-intro-mobile.svg")
-      background-position: center
     @include for-size(max-mobile)
       background-image: url("../images/bg-pattern-intro-mobile.svg")
       background-position: center
@@ -34,6 +30,7 @@
     height: 700px
     @include for-size(  mobile-small)
       height: fit-content
+      padding: 30px
 
 
     h2
@@ -62,9 +59,13 @@
             h4
                color: $Very-dark-desaturated-blue
                margin-bottom: 15px
+               @include for-size(mobile-small)
+                 font-size: 23px
             p
                 color: $Grayish-blue
                 margin-bottom: 30px
+                @include for-size(mobile-small)
+                 font-size: 14px
         .tow
             img
                 width: 500px
@@ -91,6 +92,7 @@
         flex-direction: column
         height: fit-content
         text-align: center
+        padding: 30px
         
         
     .tow
@@ -101,9 +103,13 @@
         h2
           color: $White
           @include for-size(  mobile-small)
-    
               font-weight: 500
+              font-size: 43px
+          @include for-size( phone-only )
               font-size: 36px
+            
+          
+
     
         p
           color: $White
@@ -111,7 +117,10 @@
           font-weight: 300
           line-height: 30px
           @include for-size(  mobile-small)
-             margin: auto
+             margin:  auto
+             font-size: 16px
+             margin-top: 20px
+             
 
     img
       @include for-size(  mobile-small)
@@ -129,18 +138,27 @@
      flex-direction: column
      height: fit-content
      text-align: center
+     padding: 30px
 
   img
     width: 600px
     transform: translateX(-52px)
   .one
             flex-basis: 50%
+            @include for-size( mobile-small)
+               margin-top: 30px
+
             h4
                color: $Very-dark-desaturated-blue
                margin-bottom: 15px
+               @include for-size(mobile-small)
+                 font-size: 23px
+
             p
                 color: $Grayish-blue
                 margin-bottom: 30px
+                @include for-size(mobile-small)
+                 font-size: 14px
 footer
   display: flex
   padding: 60px
@@ -150,6 +168,7 @@ footer
   @include for-size(  mobile-small)
       flex-direction: column
       text-align: center
+      padding: 30px
       svg
         margin: auto
         margin-bottom: 30px

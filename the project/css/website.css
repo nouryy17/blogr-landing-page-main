@@ -202,12 +202,6 @@ body {
     padding: 0 30px;
   }
 }
-@media (max-width: 480px) {
-  .page-header {
-    background-image: url("../images/bg-pattern-intro-mobile.svg");
-    background-position: center;
-  }
-}
 @media (max-width: 767px) {
   .page-header {
     background-image: url("../images/bg-pattern-intro-mobile.svg");
@@ -225,6 +219,7 @@ body {
 @media (max-width: 480px) {
   .section_2 {
     height: fit-content;
+    padding: 30px;
   }
 }
 .section_2 h2 {
@@ -261,9 +256,19 @@ body {
   color: hsl(237, 23%, 32%);
   margin-bottom: 15px;
 }
+@media (max-width: 480px) {
+  .section_2 .part-tow .one h4 {
+    font-size: 23px;
+  }
+}
 .section_2 .part-tow .one p {
   color: hsl(240, 2%, 79%);
   margin-bottom: 30px;
+}
+@media (max-width: 480px) {
+  .section_2 .part-tow .one p {
+    font-size: 14px;
+  }
 }
 .section_2 .part-tow .tow img {
   width: 500px;
@@ -296,6 +301,7 @@ body {
     flex-direction: column;
     height: fit-content;
     text-align: center;
+    padding: 30px;
   }
 }
 @media (max-width: 480px) {
@@ -310,6 +316,11 @@ body {
 @media (max-width: 480px) and (max-width: 480px) {
   .section_3 .tow h2 {
     font-weight: 500;
+    font-size: 43px;
+  }
+}
+@media (max-width: 480px) and (max-width: 375px) {
+  .section_3 .tow h2 {
     font-size: 36px;
   }
 }
@@ -324,6 +335,8 @@ body {
 @media (max-width: 480px) and (max-width: 480px) {
   .section_3 .tow p {
     margin: auto;
+    font-size: 16px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 480px) {
@@ -345,6 +358,7 @@ body {
     flex-direction: column;
     height: fit-content;
     text-align: center;
+    padding: 30px;
   }
 }
 .section_4 img {
@@ -354,13 +368,28 @@ body {
 .section_4 .one {
   flex-basis: 50%;
 }
+@media (max-width: 480px) {
+  .section_4 .one {
+    margin-top: 30px;
+  }
+}
 .section_4 .one h4 {
   color: hsl(237, 23%, 32%);
   margin-bottom: 15px;
 }
+@media (max-width: 480px) {
+  .section_4 .one h4 {
+    font-size: 23px;
+  }
+}
 .section_4 .one p {
   color: hsl(240, 2%, 79%);
   margin-bottom: 30px;
+}
+@media (max-width: 480px) {
+  .section_4 .one p {
+    font-size: 14px;
+  }
 }
 
 footer {
@@ -374,6 +403,7 @@ footer {
   footer {
     flex-direction: column;
     text-align: center;
+    padding: 30px;
   }
   footer svg {
     margin: auto;
