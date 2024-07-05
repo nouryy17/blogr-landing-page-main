@@ -40,6 +40,7 @@ a {
 body {
   font-family: "Overpass", sans-serif;
   font-weight: 400, 500, 700;
+  overflow-x: hidden;
 }
 
 .page-header nav {
@@ -144,18 +145,11 @@ body {
 .page-header nav div div span {
   color: hsl(0, 0%, 100%);
 }
-.page-header nav div .svg {
+.page-header nav .svg {
   display: none;
 }
-@media (max-width: 991px) {
-  .page-header nav div .svg {
-    display: block;
-  }
-  .page-header nav div .svg svg {
-    cursor: pointer;
-    display: none;
-  }
-  .page-header nav div .svg svg.activ {
+@media (max-width: 767px) {
+  .page-header nav .svg {
     display: block;
   }
 }
@@ -289,13 +283,18 @@ body {
   }
 }
 .section_2 .part-tow .one p {
-  color: hsl(240, 2%, 79%);
   margin-bottom: 30px;
+  color: hsl(240, 2%, 79%);
 }
 @media (max-width: 480px) {
   .section_2 .part-tow .one p {
     font-size: 14px;
   }
+}
+.section_2 .part-tow .tow {
+  position: relative;
+  margin: 0;
+  transform: translateX(20px);
 }
 .section_2 .part-tow .tow img {
   width: 500px;

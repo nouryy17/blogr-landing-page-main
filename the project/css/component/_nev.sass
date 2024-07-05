@@ -78,15 +78,13 @@
                     color: $White
 
         
-            .svg
-                display: none
-                @include for-size(tablet-landscape-up )
-                 display: block
-                 svg
-                       cursor: pointer
-                       display: none
-                       &.activ
-                         display: block
+        .svg
+            display: none
+            @include for-size(max-mobile)
+               display: block
+
+            
+                    
                 
                     
     .part_tow
