@@ -88,7 +88,7 @@ body {
 @media (max-width: 767px) {
   .page-header nav div ul.nav {
     flex-direction: column;
-    height: 80%;
+    height: 50%;
     padding: 20px;
     left: 73px;
   }
@@ -96,10 +96,10 @@ body {
 .page-header nav div ul.nav > li {
   position: relative;
 }
-.page-header nav div ul.nav > li:hover > .dropdown-menu {
+.page-header nav div ul.nav > li.activ > .dropdown-menu {
   display: block;
 }
-.page-header nav div ul.nav > li:hover::after {
+.page-header nav div ul.nav > li.activ li::after {
   -webkit-transform: rotateX(180deg);
   -moz-transform: rotateX(180deg);
   -ms-transform: rotateX(180deg);
@@ -189,6 +189,18 @@ body {
 }
 .page-header nav div div span {
   color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .page-header nav div div span {
+    color: hsl(237, 23%, 32%);
+  }
+}
+@media (max-width: 767px) {
+  .page-header nav div div {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 .page-header nav .svg {
   display: none;
@@ -383,6 +395,9 @@ body {
     text-align: center;
   }
 }
+.section_3 .tow {
+  margin-left: 58px;
+}
 @media (max-width: 480px) {
   .section_3 .tow {
     margin-top: -100Px;
@@ -393,43 +408,42 @@ body {
   .section_3 .tow {
     margin-top: -100Px;
     padding-bottom: 79px;
-  }
-  .section_3 .tow h2 {
-    color: hsl(0, 0%, 100%);
+    margin-left: 0px;
   }
 }
-@media (max-width: 767px) and (max-width: 480px) {
+.section_3 .tow h2 {
+  color: hsl(0, 0%, 100%);
+}
+@media (max-width: 480px) {
   .section_3 .tow h2 {
     font-weight: 500;
     font-size: 43px;
   }
 }
-@media (max-width: 767px) and (max-width: 375px) {
+@media (max-width: 375px) {
   .section_3 .tow h2 {
     font-size: 36px;
   }
 }
-@media (max-width: 767px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .section_3 .tow h2 {
     font-size: 47px;
   }
 }
-@media (max-width: 767px) {
-  .section_3 .tow p {
-    color: hsl(0, 0%, 100%);
-    max-width: 400px;
-    font-weight: 300;
-    line-height: 30px;
-  }
+.section_3 .tow p {
+  color: hsl(0, 0%, 100%);
+  max-width: 400px;
+  font-weight: 300;
+  line-height: 30px;
 }
-@media (max-width: 767px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .section_3 .tow p {
     margin: auto;
     font-size: 16px;
     margin-top: 20px;
   }
 }
-@media (max-width: 767px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .section_3 .tow p {
     max-width: 85%;
     margin: 30px auto auto;
@@ -493,7 +507,7 @@ body {
 }
 
 footer {
-  display: flex;
+  display: flex !important;
   padding: 60px;
   background-color: hsl(240, 10%, 16%);
   justify-content: space-around;

@@ -10,6 +10,14 @@ function toggleActivClass(clickEle) {
     clickEle.classList.add("activ")
 }
 
+let ilItem=document.querySelectorAll(".page-header nav div .nav > li")
+ilItem.forEach(function (ele) {
+  ele.addEventListener("click" , function () {
+    ilItem.forEach(function (ele) {
+        ele.classList.remove("activ")
+    })    
+    ele.classList.toggle("activ")
 
-
+})
+})
 

@@ -37,15 +37,15 @@
                     flex: 1
                     @include for-size(max-mobile)
                           flex-direction: column
-                          height: 80%
+                          height: 50%
                           padding: 20px
                           left: 73px
 
                     
                     & >li 
-                        &:hover > .dropdown-menu
+                        &.activ > .dropdown-menu
                            display: block
-                        &:hover::after
+                        &.activ li::after
                             @include crossBrowser(transform,rotateX(180deg))
                         position: relative
                         @include for-size(max-mobile)
@@ -119,6 +119,14 @@
                 gap: 10px
                 span
                     color: $White
+                    cursor: pointer
+                    @include for-size(max-mobile)
+                        color:$Very-dark-desaturated-blue
+                        
+                @include for-size(max-mobile)
+                   flex-direction: column
+                   justify-content: flex-start
+                
         .svg
             display: none
             @include for-size(max-mobile)

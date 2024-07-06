@@ -114,34 +114,37 @@
         
         
     .tow
+      margin-left: 58px
       @include for-size(  mobile-small)
         margin-top: -100Px
         padding-bottom: 79px
       @include for-size(max-mobile)
         margin-top: -100Px
         padding-bottom: 79px
+        margin-left: 0px
+
       
-        h2
-          color: $White
-          @include for-size(  mobile-small)
-              font-weight: 500
-              font-size: 43px
-          @include for-size( phone-only )
-              font-size: 36px
-          @include for-size(max-mobile)
-              font-size: 47px
-        p
-          color: $White
-          max-width: 400px
-          font-weight: 300
-          line-height: 30px
-          @include for-size(mobile-small)
-             margin:  auto
-             font-size: 16px
-             margin-top: 20px
-          @include for-size(max-mobile)
-             max-width: 85%
-             margin: 30px auto auto
+      h2
+        color: $White
+        @include for-size(  mobile-small)
+            font-weight: 500
+            font-size: 43px
+        @include for-size( phone-only )
+            font-size: 36px
+        @include for-size(max-mobile)
+            font-size: 47px
+      p
+        color: $White
+        max-width: 400px
+        font-weight: 300
+        line-height: 30px
+        @include for-size(mobile-small)
+           margin:  auto
+           font-size: 16px
+           margin-top: 20px
+        @include for-size(max-mobile)
+           max-width: 85%
+           margin: 30px auto auto
           
              
 
@@ -187,12 +190,12 @@
                 @include for-size(mobile-small)
                  font-size: 14px
 footer
-  display: flex
+  display: flex !important
   padding: 60px
   background-color: $Very-dark-black-blue
   justify-content: space-around
   border-top-right-radius: 82px
-  @include for-size(  mobile-small)
+  @include for-size(mobile-small)
       flex-direction: column
       text-align: center
       padding: 30px
@@ -203,7 +206,6 @@ footer
       nav  
          ul
            margin-bottom: 30px
-
   nav
     h5
       color: $White
